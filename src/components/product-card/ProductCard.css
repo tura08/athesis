@@ -1,0 +1,20 @@
+.product-card {
+  background: #fff; /* Card background */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 8px; /* Card border radius */
+  text-decoration: none; /* Remove link styling */
+  color: inherit; /* Inherit text color */
+  overflow: hidden; /* Clip overflow */
+}
+
+.product-image {
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height, adjust as needed */
+  object-fit: cover; /* Cover the container */
+}
+
+.product-info {
+  padding: 15px; /* Padding inside card */
+}
+
+/* Add more styling as needed */

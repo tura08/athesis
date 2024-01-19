@@ -1,14 +1,26 @@
 .p {
   min-height: 100vh;
   position: relative;
-  background-image: url("../../assets/bg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
+  overflow: hidden;
+}
+.p-header {
+  text-align: center;
+  /* Add more styling as needed, such as background color, font size, etc. */
 }
 .p-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 20px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two columns */
+  grid-gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
 }

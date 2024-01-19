@@ -1,14 +1,102 @@
 .h {
   min-height: 100vh;
   position: relative;
-  background-image: url("../../assets/bg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.h p {
+  text-align: justify;
+}
+.h-title {
+  color: #56a635;
+}
+.h-top,
+.h-block1 {
+  display: flex;
+  justify-content: space-around; /* Adjusts the spacing between the blocks */
+  flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
+}
+
+.h-top-left,
+.h-top-right {
+  flex: 1;
+  padding: 20px;
+  margin: 20px; /* Adjusts margin around each block */
+  max-width: 45%;
+  box-sizing: border-box; /* Includes padding and border in the width */
+}
+.h-top-left-image {
+  width: 70%;
+  /* align-items: center; */
+}
+.h-top-right-image {
+  width: 100%;
+  /* align-items: center; */
+}
+.h-block1-left {
+  flex: 1;
+  padding: 20px;
+  margin: 20px; /* Adjusts margin around each block */
+}
+.h-block1-right {
+  flex: 3;
+  padding: 20px;
+  margin: 20px; /* Adjusts margin around each block */
+}
+
+.h-bestSellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #104924;
+  color: white;
+  padding-top: 20px;
+  align-items: center;
+}
+.h-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two columns */
+  grid-gap: 20px; /* Space between cards */
+  padding: 20px;
   color: black;
 }
-.h-wrapper {
+.h-block2 {
   display: flex;
-  justify-content: center;
-  padding-top: 50px;
+  justify-content: space-around; /* Adjusts the spacing between the blocks */
+  flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
+}
+
+.h-block2-left1,
+.h-block2-right1 {
+  flex: 1;
+  padding: 20px;
+  margin: 20px; /* Adjusts margin around each block */
+  max-width: 45%;
+  box-sizing: border-box; /* Includes padding and border in the width */
+}
+
+.h-block2-image {
+  width: 100%;
+  /* align-items: center; */
+}
+
+/* Responsive design: Stacks blocks on smaller screens */
+@media (max-width: 768px) {
+  .h-top {
+    flex-direction: column;
+  }
+  .h-top-left,
+  .h-top-right {
+    max-width: 80%; /* Adjust the width as needed */
+    margin: 20px auto; /* Top and bottom margin 20px, left and right auto */
+  }
+  .h-block2 {
+    flex-direction: column;
+  }
+  .h-content,
+  .h-image {
+    max-width: 80%;
+    margin: 20px auto; /* Center content on smaller screens */
+  }
 }

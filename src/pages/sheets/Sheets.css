@@ -1,14 +1,9 @@
 .ts {
   min-height: 100vh;
   position: relative;
-  background-image: url("../../assets/bg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
+  overflow: hidden;
 }
 .ts-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
 }
