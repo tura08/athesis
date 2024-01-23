@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Contact.css";
 
+// const googleAPI = process.env.REACT_APP_GOOGLE_API;
+
 const Contact = () => {
   function Submit(e) {
     e.preventDefault();
