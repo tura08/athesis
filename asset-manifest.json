@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/athesis/static/css/main.401f2323.css",
-    "main.js": "/athesis/static/js/main.1765bd04.js",
+    "main.css": "/athesis/static/css/main.d6cc7151.css",
+    "main.js": "/athesis/static/js/main.6afc7080.js",
     "static/media/magnolia.png": "/athesis/static/media/magnolia.2a9ee48f924cc6295aca.png",
     "static/media/moringa.png": "/athesis/static/media/moringa.05d56c877ebe2a870fd5.png",
     "static/media/boswellia.png": "/athesis/static/media/boswellia.ddac401cff4af04ad145.png",
@@ -9,11 +9,11 @@
     "static/media/logo.png": "/athesis/static/media/logo.840aec5ae98174af019b.png",
     "static/media/logo-top.svg": "/athesis/static/media/logo-top.8fd031dec901e189e180623b620819ca.svg",
     "index.html": "/athesis/index.html",
-    "main.401f2323.css.map": "/athesis/static/css/main.401f2323.css.map",
-    "main.1765bd04.js.map": "/athesis/static/js/main.1765bd04.js.map"
+    "main.d6cc7151.css.map": "/athesis/static/css/main.d6cc7151.css.map",
+    "main.6afc7080.js.map": "/athesis/static/js/main.6afc7080.js.map"
   },
   "entrypoints": [
-    "static/css/main.401f2323.css",
-    "static/js/main.1765bd04.js"
+    "static/css/main.d6cc7151.css",
+    "static/js/main.6afc7080.js"
   ]
 }
