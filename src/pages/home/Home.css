@@ -1,6 +1,5 @@
 .h {
   min-height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -11,29 +10,56 @@
 .h-title {
   color: #56a635;
 }
-.h-top,
+.h-top {
+  background: url("../../assets/img-home/home-sfondo.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 650px; /* Adjust height as needed */
+  /* z-index: -1; */
+}
+
+.h-top-logo {
+  position: absolute; /* Position it over the background */
+  top: 40%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  width: 300px; /* Example width, adjust as necessary */
+}
+.h-top-intro {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-weight: 300;
+  color: white;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+.h-top-button a {
+  position: absolute;
+  top: 75%;
+  left: 43%;
+  justify-content: center;
+  text-decoration: none; /* Remove the default underline */
+  color: black; /* Set the text color to green */
+  padding: 15px 70px;
+  border-radius: 30px;
+  background-color: #4fde4f; /* Set the initial background to transparent */
+  transition: background-color 0.3s, color 0.3s;
+}
+.h-top-button a:hover {
+  background-color: #104924; /* Set the background color to light green on hover */
+  color: white;
+  border: 1px solid white;
+}
 .h-block1 {
   display: flex;
   justify-content: space-around; /* Adjusts the spacing between the blocks */
   flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
 }
 
-.h-top-left,
-.h-top-right {
-  flex: 1;
-  padding: 20px;
-  margin: 20px; /* Adjusts margin around each block */
-  max-width: 45%;
-  box-sizing: border-box; /* Includes padding and border in the width */
-}
-.h-top-left-image {
-  width: 70%;
-  /* align-items: center; */
-}
-.h-top-right-image {
-  width: 100%;
-  /* align-items: center; */
-}
+/* Rest of your CSS */
+
 .h-block1-left {
   flex: 1;
   padding: 20px;
@@ -86,10 +112,9 @@
   .h-top {
     flex-direction: column;
   }
-  .h-top-left,
-  .h-top-right {
-    max-width: 80%; /* Adjust the width as needed */
-    margin: 20px auto; /* Top and bottom margin 20px, left and right auto */
+  .h-top-intro {
+    gap: 10px;
+    max-width: 350px;
   }
   .h-block2 {
     flex-direction: column;
@@ -98,5 +123,8 @@
   .h-image {
     max-width: 80%;
     margin: 20px auto; /* Center content on smaller screens */
+  }
+  .h-top-button a {
+    left: 30%;
   }
 }

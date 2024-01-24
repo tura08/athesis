@@ -1,49 +1,44 @@
-// import React from "react";
-
-// import "./Footer.css";
-
-// const Footer = () => {
-//   return (
-//     <div className="f">
-//       <p>
-//         <b>Online dal 1998</b>
-//       </p>
-//       <p>Athesis di Turazza Marco</p>
-//     </div>
-//   );
-// };
-
 // export default Footer;
 import React from "react";
 import "./Footer.css";
 
-// Assuming you have imported the images for the logo and social media icons
-import logoImage from "../../assets/logo.png";
-import facebookIcon from "../../assets/logo.png";
-import instagramIcon from "../../assets/logo.png";
-import linkedinIcon from "../../assets/logo.png";
+// Images for icons
+import logoImage from "../../assets/logo.svg";
+import facebookIcon from "../../assets/file-svg/facebook.svg";
+import instagramIcon from "../../assets/file-svg/instagram.svg";
+import linkedinIcon from "../../assets/file-svg/linkedin.svg";
+import foot1 from "../../assets/file-svg/iconafooter1.svg";
+import foot2 from "../../assets/file-svg/iconafooter2.svg";
+import foot3 from "../../assets/file-svg/iconafooter3.svg";
+import foot4 from "../../assets/file-svg/iconafooter4.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-online">
-        <p>
-          <b>Online dal 1998</b>
-        </p>
+    <footer className="f">
+      <div className="f-online">
+        <b>Online dal 1998</b>
       </div>
-
-      <div className="footer-main">
-        <div className="footer-logo">
-          <img src={logoImage} alt="Logo" />
+      <div className="f-main">
+        <img src={logoImage} alt="Logo" className="f-logo" />
+        <div className="f-info">
+          <div className="f-info-item">
+            <img src={foot1} alt="" className="f-icon" />
+            Address: Via San Marco 80 - 37138 Verona (Vr)
+          </div>
+          <div className="f-info-item">
+            <img className="f-icon" src={foot2} alt="" />
+            info@athesis-herbs.com
+          </div>
+          <div className="f-info-item">
+            <img className="f-icon" src={foot3} alt="" />
+            marco.turazza@pec.ordinevetverona.it
+          </div>
+          <div className="f-info-item">
+            <img className="f-icon" src={foot4} alt="" />
+            +39 3483286636
+          </div>
         </div>
-        <div className="footer-contact">
-          <p>Athesis di Turazza Marco</p>
-          <p>Address: Via San Marco 80 - 37138 Verona (Vr)</p>
-          <p>Email: info@athesis-herbs.com</p>
-          <p>PEC: marco.turazza@pec.ordinevetverona.it</p>
-          <p>Phone: 3483286636</p>
-        </div>
-        <div className="footer-social">
+        <div className="f-social">
           <a
             href="https://www.instagram.com"
             target="_blank"
@@ -68,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className="f-bottom">
         <p>
           P.I.: IT03877740237 | C.F.: TRZMRC58L19D957N - R.E.A.: VR373142 | Cod.
           destinatario: 3ZJY534

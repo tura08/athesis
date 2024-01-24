@@ -35,6 +35,7 @@ const Contact = () => {
 
   return (
     <div className="c">
+      <div className="c-bg"></div>
       <h1>Per qualsiasi richiesta non esitare a contattarci!</h1>
       <div className="c-wrapper">
         <form onSubmit={(e) => Submit(e)}>

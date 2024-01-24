@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
-import magnolia from "../../assets/products-img/magnolia.png";
-import logoTop from "../../assets/logo-top.svg";
+import athesis from "../../assets/athesis.svg";
 
 // Product card with best sellers.
 import ProductCard from "../../components/product-card/ProductCard";
@@ -35,18 +35,21 @@ const Home = () => {
   return (
     <div className="h">
       <div className="h-top">
-        <div className="h-top-left">
-          <img src={logoTop} alt="Company" className="h-top-left-image" />
-          <h2>di Turazza Marco</h2>
+        <div className="h-top-bg">
+          <img src={athesis} alt="Company Logo" className="h-top-logo" />
+        </div>
+        <div className="h-top-intro">
+          <h3>di Turazza Marco</h3>
           <p>
-            Nullam sagittis ac orci at sagittis. Sed viverra ullamcorper dui,
-            fermentum varius turpis luctus eu. Integer ut mauris est. Nunc sed
-            orci eu mauris tempus molestie. Phasellus sed maximus purus.
+            Benvenuti in Athesis un'azienda italiana specializzata in
+            nell'importazione e distribuzione all'ingrosso di estratti di piante
+            e funghi per uso alimentare. Da oltre 20 anni trattiamo ingredienti
+            naturali e di alta qualità
           </p>
         </div>
-        <div className="h-top-right">
-          <img src={magnolia} alt="Company" className="h-top-right-image" />
-        </div>
+      </div>
+      <div className="h-top-button">
+        <Link to="/contact">Contattaci</Link>
       </div>
       <div className="h-block1">
         <div className="h-block1-left">

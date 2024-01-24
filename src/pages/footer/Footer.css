@@ -1,67 +1,103 @@
-/* .f {
-  text-align: center;
-  font-size: 15px;
+.f {
   background-color: #104924;
-  color: white;
-} */
-
-.footer {
-  background-color: #104924; /* Dark green background */
-  color: #fff; /* White text color */
+  color: #fff;
   padding: 20px;
   text-align: center;
   flex-direction: column;
 }
 
-.footer-online {
-  margin-bottom: 20px; /* Space below the 'Online dal 1998' text */
-  font-weight: bold; /* Make the text bold */
+.f-online {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
 }
 
-.footer-main {
+.f-main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px; /* Space below the main content row */
+  margin-bottom: 80px;
 }
 
-.footer-logo img {
-  max-width: 100px; /* Maximum width of the logo image */
+.f-logo {
+  max-width: 120px; /* Maximum width of the logo image */
   height: auto; /* Maintain aspect ratio */
 }
-
-.footer-contact p {
-  margin: 5px 0; /* Small margin between contact lines */
+.f-info-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  font-weight: 400;
+  width: 100%;
+}
+.f-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+.f-social {
+  display: inline-block;
+}
+.f-social a {
+  width: 60px;
+  height: 60px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #56a635;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.f-social a::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.f-social a:hover::before {
+  transform: scale(1);
+}
+.f-social a img {
+  width: 50%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.f-social a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-.footer-social a {
-  display: inline-block; /* Align the icons inline */
-  margin: 0 10px; /* Spacing between icons */
-}
-
-.footer-social img {
-  width: 30px; /* Width of the social media icons */
-  height: 30px; /* Height of the social media icons */
-}
-
-.footer-bottom {
-  margin-top: 20px; /* Space above the bottom content */
-  font-size: 0.8em; /* Smaller font size for additional content */
+.f-bottom {
+  margin-top: 20px;
+  margin-right: 50px;
+  font-size: 13px;
+  text-align: right;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .footer-main {
+  .f-main {
     flex-direction: column;
+    gap: 50px;
   }
 
-  .footer-logo,
-  .footer-contact,
-  .footer-social {
+  .f-logo,
+  .f-contact,
+  .f-social {
     margin: 10px 0; /* Adds vertical padding and removes horizontal padding */
   }
 
-  .footer-social a {
-    margin: 5px;
+  .f-social a {
+    margin: 10px 25px;
+  }
+  .f-bottom {
+    font-size: 10px;
   }
 }

@@ -2,40 +2,96 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  position: fixed; /* Changed from sticky to fixed */
-  top: 0; /* Align to the top of the viewport */
-  left: 0; /* Align to the left of the viewport */
-  right: 0; /* Stretch across the full viewport width */
-  z-index: 1000; /* Ensure it's above other content */
-  height: 90px;
-  transition: height 0.3s ease, background-color 0.3s ease; /* Add background-color to the transition */
-  background-color: rgba(255, 255, 255, 1);
+  padding: 50px 50px;
+  position: absolute; /* or 'fixed' based on your layout */
+  width: 100%;
+  z-index: 10;
 }
-.navbar.shrink {
-  height: 50px; /* Reduced height when scrolled */
-}
+
 .logo img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: width 0.3s ease, height 0.3s ease;
 }
-.logo.shrink-logo img {
-  width: 50px; /* Reduced size when scrolled */
-  height: 50px; /* Adjust height proportionally */
-}
+
 .links {
-  font-size: 18px;
+  font-size: 15px;
   display: flex;
   align-items: center;
+  transition: font-size 0.3s ease;
 }
+
 .link {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 20px 40px;
+  color: white;
 }
 .link:hover {
   color: #56a635;
+}
+.toggleButton {
+  display: none;
+  position: fixed; /* Fixed position so it's always visible on scroll */
+  right: 48px;
+  top: 52px;
+  z-index: 2000; /* Ensure it's above other content */
+  background-color: #56a635;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toggleButton svg {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.toggleButton svg {
+  padding-top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .toggleButton {
+    display: flex;
+  }
+
+  .navbar#open {
+    position: fixed; /* Fix the navbar on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-color: #104924;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    z-index: 1000; /* High z-index to stay on top of other content */
+  }
+  .navbar#close .links {
+    display: none;
+  }
+
+  .navbar#open .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar#open .link {
+    padding: 15px; /* Larger hit area for touch screens */
+  }
+
+  .navbar#open .logo {
+    display: none; /* Optionally hide logo when menu is open */
+  }
 }

@@ -3,6 +3,13 @@
   position: relative;
   overflow: hidden;
 }
+.c-bg {
+  background: url("../../assets/img-home/home-sfondo.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 650px; /* Adjust height as needed */
+  z-index: -1;
+}
 .c-wrapper {
   padding: 100px 0 50px 0;
   display: flex;
@@ -44,8 +51,8 @@ textarea {
   background-color: #56a635; /* Initial color */
   color: black;
   border: none;
-  padding: 10px 10px;
-  border-radius: 20px;
+  padding: 15px 70px;
+  border-radius: 30px;
   font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition on hover */

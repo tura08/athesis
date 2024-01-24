@@ -40,6 +40,7 @@ const productList = [
 const Products = () => {
   return (
     <div className="p">
+      <div className="p-bg"></div>
       <div className="p-header">
         <h1>Prodotti</h1>
       </div>

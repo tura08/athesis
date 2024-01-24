@@ -3,6 +3,13 @@
   position: relative;
   overflow: hidden;
 }
+.a-bg {
+  background: url("../../assets/img-home/home-sfondo.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 650px; /* Adjust height as needed */
+  z-index: -1;
+}
 .a-wrapper {
   display: flex;
   justify-content: center;

@@ -1,3 +1,4 @@
+//Uso HashRouter per GitHub pages
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navigation from "./pages/navigation/Navigation";

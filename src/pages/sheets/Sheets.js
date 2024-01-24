@@ -5,6 +5,7 @@ import "./Sheets.css";
 const Sheets = () => {
   return (
     <div className="ts">
+      <div className="ts-bg"></div>
       <div className="ts-wrapper">
         <div className="ts-left">
           <h1>Schede Tecniche</h1>
