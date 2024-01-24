@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/athesis/static/css/main.d6cc7151.css",
-    "main.js": "/athesis/static/js/main.98507376.js",
+    "main.css": "/athesis/static/css/main.c9c6f198.css",
+    "main.js": "/athesis/static/js/main.9b10a4d7.js",
     "static/media/magnolia.png": "/athesis/static/media/magnolia.2a9ee48f924cc6295aca.png",
     "static/media/moringa.png": "/athesis/static/media/moringa.05d56c877ebe2a870fd5.png",
     "static/media/boswellia.png": "/athesis/static/media/boswellia.ddac401cff4af04ad145.png",
+    "static/media/home-sfondo.png": "/athesis/static/media/home-sfondo.e7cbcac0d2e2a92926a6.png",
     "static/media/partenio.png": "/athesis/static/media/partenio.cacb0065d5d8b9e6a230.png",
-    "static/media/logo.png": "/athesis/static/media/logo.840aec5ae98174af019b.png",
-    "static/media/logo-top.svg": "/athesis/static/media/logo-top.8fd031dec901e189e180623b620819ca.svg",
+    "static/media/athesis.svg": "/athesis/static/media/athesis.764cb9e4b6f2fd036659b8c5a88d36eb.svg",
+    "static/media/logo.svg": "/athesis/static/media/logo.e0565d9b50aae87c2844062eca4182b1.svg",
+    "static/media/instagram.svg": "/athesis/static/media/instagram.72cef43bc93b04f52e29f022ef720f8b.svg",
+    "static/media/iconafooter3.svg": "/athesis/static/media/iconafooter3.c50bcd243b0fbf31c5efcbfa3bdaa12e.svg",
+    "static/media/iconafooter4.svg": "/athesis/static/media/iconafooter4.e53cd3fa448528869eadabb778937e69.svg",
+    "static/media/iconafooter2.svg": "/athesis/static/media/iconafooter2.4d7bf2cc1d8a9a676bd2b3abd428f0de.svg",
     "index.html": "/athesis/index.html",
-    "main.d6cc7151.css.map": "/athesis/static/css/main.d6cc7151.css.map",
-    "main.98507376.js.map": "/athesis/static/js/main.98507376.js.map"
+    "static/media/iconafooter1.svg": "/athesis/static/media/iconafooter1.3583d12b34fddda10f76191eaf0a0d16.svg",
+    "static/media/linkedin.svg": "/athesis/static/media/linkedin.dff40ae802524d8fc0cbce3f312abe4f.svg",
+    "static/media/facebook.svg": "/athesis/static/media/facebook.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
+    "main.c9c6f198.css.map": "/athesis/static/css/main.c9c6f198.css.map",
+    "main.9b10a4d7.js.map": "/athesis/static/js/main.9b10a4d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6cc7151.css",
-    "static/js/main.98507376.js"
+    "static/css/main.c9c6f198.css",
+    "static/js/main.9b10a4d7.js"
   ]
 }
