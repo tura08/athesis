@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/athesis/static/css/main.c9c6f198.css",
-    "main.js": "/athesis/static/js/main.9b10a4d7.js",
+    "main.css": "/athesis/static/css/main.36316f74.css",
+    "main.js": "/athesis/static/js/main.a4d48ea5.js",
     "static/media/magnolia.png": "/athesis/static/media/magnolia.2a9ee48f924cc6295aca.png",
     "static/media/moringa.png": "/athesis/static/media/moringa.05d56c877ebe2a870fd5.png",
     "static/media/boswellia.png": "/athesis/static/media/boswellia.ddac401cff4af04ad145.png",
@@ -17,11 +17,11 @@
     "static/media/iconafooter1.svg": "/athesis/static/media/iconafooter1.3583d12b34fddda10f76191eaf0a0d16.svg",
     "static/media/linkedin.svg": "/athesis/static/media/linkedin.dff40ae802524d8fc0cbce3f312abe4f.svg",
     "static/media/facebook.svg": "/athesis/static/media/facebook.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
-    "main.c9c6f198.css.map": "/athesis/static/css/main.c9c6f198.css.map",
-    "main.9b10a4d7.js.map": "/athesis/static/js/main.9b10a4d7.js.map"
+    "main.36316f74.css.map": "/athesis/static/css/main.36316f74.css.map",
+    "main.a4d48ea5.js.map": "/athesis/static/js/main.a4d48ea5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9c6f198.css",
-    "static/js/main.9b10a4d7.js"
+    "static/css/main.36316f74.css",
+    "static/js/main.a4d48ea5.js"
   ]
 }
