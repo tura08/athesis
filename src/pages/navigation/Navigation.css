@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 50px;
-  position: absolute; /* or 'fixed' based on your layout */
+  padding: 30px 50px;
+  position: absolute;
   width: 100%;
   z-index: 10;
 }
@@ -11,23 +11,25 @@
 .logo img {
   width: 50px;
   height: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .links {
-  font-size: 15px;
   display: flex;
   align-items: center;
-  transition: font-size 0.3s ease;
 }
 
 .link {
   text-decoration: none;
   padding: 20px 40px;
   color: white;
+}
+.link h3 {
+  font-weight: normal; /* Normal font weight for non-active links */
+  /* other styles */
+}
+
+.link h3.active {
+  font-weight: bold; /* Bold font weight for active link */
 }
 .link:hover {
   color: #56a635;
@@ -37,7 +39,7 @@
   position: fixed; /* Fixed position so it's always visible on scroll */
   right: 48px;
   top: 52px;
-  z-index: 2000; /* Ensure it's above other content */
+  z-index: 100; /* Ensure it's above other content */
   background-color: #56a635;
   border-radius: 50%;
   width: 35px;
@@ -48,13 +50,8 @@
 }
 
 .toggleButton svg {
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.toggleButton svg {
   padding-top: 10px;
+  color: white;
   font-size: 30px;
   cursor: pointer;
 }

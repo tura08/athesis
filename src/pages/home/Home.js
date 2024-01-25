@@ -34,23 +34,22 @@ const productList = [
 const Home = () => {
   return (
     <div className="h">
-      <div className="h-top">
-        <div className="h-top-bg">
-          <img src={athesis} alt="Company Logo" className="h-top-logo" />
-        </div>
-        <div className="h-top-intro">
+      <div className="h-bg">
+        <div className="h-top">
+          <img src={athesis} alt="Company Logo" />
           <h3>di Turazza Marco</h3>
           <p>
             Benvenuti in Athesis un'azienda italiana specializzata in
             nell'importazione e distribuzione all'ingrosso di estratti di piante
             e funghi per uso alimentare. Da oltre 20 anni trattiamo ingredienti
-            naturali e di alta qualità
+            naturali e di alta qualità.
           </p>
+          <div className="h-top-button">
+            <Link to="/contact">Contattaci</Link>
+          </div>
         </div>
       </div>
-      <div className="h-top-button">
-        <Link to="/contact">Contattaci</Link>
-      </div>
+
       <div className="h-block1">
         <div className="h-block1-left">
           <h1 className="h-title">Qualità</h1>

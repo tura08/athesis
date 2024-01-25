@@ -41,28 +41,24 @@ const Navigation = () => {
         </div>
         <div className="links">
           <Link to="/products" className="link">
-            {location.pathname === "/products" ? (
-              <h3>PRODOTTI</h3>
-            ) : (
-              <p>PRODOTTI</p>
-            )}
+            <h3 className={location.pathname === "/products" ? "active" : ""}>
+              PRODOTTI
+            </h3>
           </Link>
           <Link to="/sheets" className="link">
-            {location.pathname === "/sheets" ? (
-              <h3>SCHEDE TECNICHE</h3>
-            ) : (
-              <p>SCHEDE TECNICHE</p>
-            )}
+            <h3 className={location.pathname === "/sheets" ? "active" : ""}>
+              SCHEDE TECNICHE
+            </h3>
           </Link>
           <Link to="/contact" className="link">
-            {location.pathname === "/contact" ? (
-              <h3>CONTATTI</h3>
-            ) : (
-              <p>CONTATTI</p>
-            )}
+            <h3 className={location.pathname === "/contact" ? "active" : ""}>
+              CONTATTI
+            </h3>
           </Link>
           <Link to="/about" className="link">
-            {location.pathname === "/about" ? <h3>ABOUT</h3> : <p>ABOUT</p>}
+            <h3 className={location.pathname === "/about" ? "active" : ""}>
+              ABOUT
+            </h3>
           </Link>
         </div>
       </div>

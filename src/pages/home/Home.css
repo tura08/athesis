@@ -4,41 +4,32 @@
   flex-direction: column;
   overflow: hidden;
 }
-.h p {
-  text-align: justify;
-}
+
 .h-title {
   color: #56a635;
 }
-.h-top {
-  background: url("../../assets/img-home/home-sfondo.png") no-repeat center
-    center;
+.h-bg {
+  background: url("../../assets/img-home/home-sfondo.png");
   background-size: cover;
   height: 650px; /* Adjust height as needed */
   /* z-index: -1; */
 }
-
-.h-top-logo {
-  position: absolute; /* Position it over the background */
-  top: 40%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for exact centering */
-  width: 300px; /* Example width, adjust as necessary */
-}
-.h-top-intro {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  font-weight: 300;
+.h-top {
+  margin-top: 200px;
   color: white;
-  transform: translate(-50%, -50%);
-  width: 500px;
+}
+.h-top img {
+  width: 300px;
+}
+.h-top p {
+  padding: 20px 25%;
+}
+.h-block1 p,
+.h-block2 p {
+  padding: 10px 10%;
 }
 
 .h-top-button a {
-  position: absolute;
-  top: 75%;
-  left: 43%;
   justify-content: center;
   text-decoration: none; /* Remove the default underline */
   color: black; /* Set the text color to green */
@@ -59,16 +50,9 @@
 }
 
 /* Rest of your CSS */
-
-.h-block1-left {
-  flex: 1;
-  padding: 20px;
-  margin: 20px; /* Adjusts margin around each block */
-}
-.h-block1-right {
-  flex: 3;
-  padding: 20px;
-  margin: 20px; /* Adjusts margin around each block */
+.h-block1,
+.h-block2 {
+  display: flex; /* Use flexbox for the inner structure of the blocks */
 }
 
 .h-bestSellers {
@@ -93,38 +77,29 @@
   flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
 }
 
-.h-block2-left1,
+/* .h-block2-left1,
 .h-block2-right1 {
   flex: 1;
   padding: 20px;
-  margin: 20px; /* Adjusts margin around each block */
-  max-width: 45%;
-  box-sizing: border-box; /* Includes padding and border in the width */
-}
+  margin: 20px;
+} */
 
 .h-block2-image {
-  width: 100%;
+  width: 60%;
   /* align-items: center; */
 }
 
 /* Responsive design: Stacks blocks on smaller screens */
 @media (max-width: 768px) {
-  .h-top {
-    flex-direction: column;
+  .h-top p {
+    padding: 20px 10%;
   }
-  .h-top-intro {
-    gap: 10px;
-    max-width: 350px;
-  }
+  .h-block1,
   .h-block2 {
-    flex-direction: column;
+    flex-direction: row; /* Side by side on larger screens */
   }
-  .h-content,
-  .h-image {
-    max-width: 80%;
-    margin: 20px auto; /* Center content on smaller screens */
-  }
-  .h-top-button a {
-    left: 30%;
+  .h-block2-left1,
+  .h-block2-right1 {
+    flex-direction: row;
   }
 }

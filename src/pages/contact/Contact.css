@@ -1,14 +1,13 @@
 .c {
-  min-height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 .c-bg {
-  background: url("../../assets/img-home/home-sfondo.png") no-repeat center
-    center;
+  background: url("../../assets/img-home/home-sfondo.png");
   background-size: cover;
   height: 650px; /* Adjust height as needed */
-  z-index: -1;
+  /* z-index: -1; */
 }
 .c-wrapper {
   padding: 100px 0 50px 0;

@@ -62,7 +62,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
       <div className="f-bottom">
         <p>
           P.I.: IT03877740237 | C.F.: TRZMRC58L19D957N - R.E.A.: VR373142 | Cod.
