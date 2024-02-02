@@ -1,20 +1,33 @@
 .product-card {
   background: #fff; /* Card background */
   border: 1px solid #ddd; /* Card border */
-  border-radius: 8px; /* Card border radius */
+  border-radius: 5px; /* Card border radius */
   text-decoration: none; /* Remove link styling */
   color: inherit; /* Inherit text color */
   overflow: hidden; /* Clip overflow */
 }
 
 .product-image {
-  width: 100%; /* Full width */
-  height: 200px; /* Fixed height, adjust as needed */
+  width: 90%; /* Full width */
+  max-height: 200px; /* Fixed height, adjust as needed */
   object-fit: cover; /* Cover the container */
 }
-
 .product-info {
-  padding: 15px; /* Padding inside card */
+  padding: 20px; /* Padding inside card */
+}
+.product-info h2 {
+  text-align: left;
+  color: var(--light-green);
+}
+.product-info p {
+  margin: 0;
+  text-align: left;
+}
+.product-price {
+  margin: 15px;
+  padding: 10px;
+  background-color: var(--light-green);
+  color: white;
 }
 
 /* Add more styling as needed */

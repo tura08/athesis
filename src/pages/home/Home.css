@@ -1,34 +1,26 @@
-.h {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.h-title {
-  color: #56a635;
-}
 .h-bg {
   background: url("../../assets/img-home/home-sfondo.png");
   background-size: cover;
-  height: 650px; /* Adjust height as needed */
-  /* z-index: -1; */
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
 }
 .h-top {
   margin-top: 200px;
+  padding: 20px;
   color: white;
 }
 .h-top img {
-  width: 300px;
+  max-width: 300px;
 }
 .h-top p {
   padding: 20px 25%;
 }
-.h-block1 p,
-.h-block2 p {
-  padding: 10px 10%;
+.h-top-button {
+  margin-top: 50px;
 }
-
 .h-top-button a {
   justify-content: center;
   text-decoration: none; /* Remove the default underline */
@@ -43,50 +35,80 @@
   color: white;
   border: 1px solid white;
 }
-.h-block1 {
+/* Carosello */
+.h-carosello img {
+  margin-top: 30px;
+  gap: 10px;
+  max-height: 200px;
+}
+.h-carosello-image {
+  margin: 0 1%;
+}
+/* Primo blocco su qualità */
+.h-quality {
   display: flex;
-  justify-content: space-around; /* Adjusts the spacing between the blocks */
-  flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 0 10em;
+  margin: 30px;
+  gap: 10px;
+}
+.h-quality-left {
+  flex: 1;
+}
+.h-quality-right {
+  flex: 4;
+}
+.h-title {
+  color: var(--light-green);
 }
 
-/* Rest of your CSS */
-.h-block1,
-.h-block2 {
-  display: flex; /* Use flexbox for the inner structure of the blocks */
-}
-
+/* Secondo blocco su prodotti più venduti */
 .h-bestSellers {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #104924;
+  background-color: var(--dark-green);
   color: white;
   padding-top: 20px;
   align-items: center;
+}
+.h-bestSellers-header {
+  margin-top: 50px;
 }
 .h-product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates two columns */
   grid-gap: 20px; /* Space between cards */
-  padding: 20px;
+  margin: 50px 180px;
   color: black;
 }
-.h-block2 {
+
+/* Prossimo blocco */
+.h-priceShipTags {
   display: flex;
-  justify-content: space-around; /* Adjusts the spacing between the blocks */
-  flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 30px;
+  padding: 0 10em;
 }
-
-/* .h-block2-left1,
-.h-block2-right1 {
+.h-priceShipTags:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.h-priceShipTags-title {
+  color: var(--light-green);
+  text-align: left;
+}
+.h-priceShipTags-left {
   flex: 1;
-  padding: 20px;
-  margin: 20px;
-} */
-
-.h-block2-image {
-  width: 60%;
-  /* align-items: center; */
+}
+.h-priceShipTags-right {
+  flex: 1;
+}
+.h-priceShipTags-image {
+  margin: 50px;
+  width: 50%;
 }
 
 /* Responsive design: Stacks blocks on smaller screens */

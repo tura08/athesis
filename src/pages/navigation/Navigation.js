@@ -41,24 +41,24 @@ const Navigation = () => {
         </div>
         <div className="links">
           <Link to="/products" className="link">
-            <h3 className={location.pathname === "/products" ? "active" : ""}>
+            <h4 className={location.pathname === "/products" ? "active" : ""}>
               PRODOTTI
-            </h3>
+            </h4>
           </Link>
           <Link to="/sheets" className="link">
-            <h3 className={location.pathname === "/sheets" ? "active" : ""}>
+            <h4 className={location.pathname === "/sheets" ? "active" : ""}>
               SCHEDE TECNICHE
-            </h3>
+            </h4>
           </Link>
           <Link to="/contact" className="link">
-            <h3 className={location.pathname === "/contact" ? "active" : ""}>
+            <h4 className={location.pathname === "/contact" ? "active" : ""}>
               CONTATTI
-            </h3>
+            </h4>
           </Link>
           <Link to="/about" className="link">
-            <h3 className={location.pathname === "/about" ? "active" : ""}>
+            <h4 className={location.pathname === "/about" ? "active" : ""}>
               ABOUT
-            </h3>
+            </h4>
           </Link>
         </div>
       </div>

@@ -1,3 +1,8 @@
+:root {
+  --dark-green: #104924;
+  --light-green: #56a635;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
@@ -14,6 +19,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 p {
   text-align: justify;
 }
