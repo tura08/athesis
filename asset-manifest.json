@@ -1,14 +1,28 @@
 {
   "files": {
-    "main.css": "/athesis/static/css/main.36316f74.css",
-    "main.js": "/athesis/static/js/main.a4d48ea5.js",
+    "main.css": "/athesis/static/css/main.68c3979a.css",
+    "main.js": "/athesis/static/js/main.ceb819f1.js",
     "static/media/magnolia.png": "/athesis/static/media/magnolia.2a9ee48f924cc6295aca.png",
     "static/media/moringa.png": "/athesis/static/media/moringa.05d56c877ebe2a870fd5.png",
     "static/media/boswellia.png": "/athesis/static/media/boswellia.ddac401cff4af04ad145.png",
     "static/media/home-sfondo.png": "/athesis/static/media/home-sfondo.e7cbcac0d2e2a92926a6.png",
     "static/media/partenio.png": "/athesis/static/media/partenio.cacb0065d5d8b9e6a230.png",
+    "static/media/Carosello9.png": "/athesis/static/media/Carosello9.ae315811849e5be729df.png",
+    "static/media/Carosello7.png": "/athesis/static/media/Carosello7.b0e31d03e8cd1eed6ab7.png",
+    "static/media/Carosello8.png": "/athesis/static/media/Carosello8.35ad3f400af933a6b226.png",
+    "static/media/Carosello10.png": "/athesis/static/media/Carosello10.e2e8d72045d9efd6a1d5.png",
+    "static/media/Carosello6.png": "/athesis/static/media/Carosello6.2d00f6065279c48c38c1.png",
+    "static/media/Carosello2.png": "/athesis/static/media/Carosello2.731bbc727156cbf96dc0.png",
+    "static/media/Carosello3.png": "/athesis/static/media/Carosello3.78d91242bb06665cd3af.png",
+    "static/media/Carosello4.png": "/athesis/static/media/Carosello4.23cb05261951ee19a4d1.png",
+    "static/media/Carosello1.png": "/athesis/static/media/Carosello1.ed8f9bb956f5786cdfe5.png",
+    "static/media/Carosello5.png": "/athesis/static/media/Carosello5.836ee000e6586a8ab003.png",
+    "static/media/campioni.svg": "/athesis/static/media/campioni.bd910efbef8e989b5b907a19212d9b8d.svg",
     "static/media/athesis.svg": "/athesis/static/media/athesis.764cb9e4b6f2fd036659b8c5a88d36eb.svg",
+    "static/media/prezzi.svg": "/athesis/static/media/prezzi.749f198f8e9d7b12abe84cea5dc87b3e.svg",
     "static/media/logo.svg": "/athesis/static/media/logo.e0565d9b50aae87c2844062eca4182b1.svg",
+    "static/media/confezioni.svg": "/athesis/static/media/confezioni.944d76a17c528595c54424d8d828cac5.svg",
+    "static/media/spedizioni.svg": "/athesis/static/media/spedizioni.9e924676d9b0f170cd1be8704434d142.svg",
     "static/media/instagram.svg": "/athesis/static/media/instagram.72cef43bc93b04f52e29f022ef720f8b.svg",
     "static/media/iconafooter3.svg": "/athesis/static/media/iconafooter3.c50bcd243b0fbf31c5efcbfa3bdaa12e.svg",
     "static/media/iconafooter4.svg": "/athesis/static/media/iconafooter4.e53cd3fa448528869eadabb778937e69.svg",
@@ -17,11 +31,11 @@
     "static/media/iconafooter1.svg": "/athesis/static/media/iconafooter1.3583d12b34fddda10f76191eaf0a0d16.svg",
     "static/media/linkedin.svg": "/athesis/static/media/linkedin.dff40ae802524d8fc0cbce3f312abe4f.svg",
     "static/media/facebook.svg": "/athesis/static/media/facebook.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
-    "main.36316f74.css.map": "/athesis/static/css/main.36316f74.css.map",
-    "main.a4d48ea5.js.map": "/athesis/static/js/main.a4d48ea5.js.map"
+    "main.68c3979a.css.map": "/athesis/static/css/main.68c3979a.css.map",
+    "main.ceb819f1.js.map": "/athesis/static/js/main.ceb819f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.36316f74.css",
-    "static/js/main.a4d48ea5.js"
+    "static/css/main.68c3979a.css",
+    "static/js/main.ceb819f1.js"
   ]
 }
