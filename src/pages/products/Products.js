@@ -1,60 +1,70 @@
 import React from "react";
-import ProductCard from "../../components/product-card/ProductCard";
+import { Link } from "react-router-dom";
 import "./Products.css";
 
-// Importing images from the src/assets/products-img folder
-import partenioImage from "../../assets/products-img/partenio.png";
-import moringaImage from "../../assets/products-img/moringa.png";
-import boswelliaImage from "../../assets/products-img/boswellia.png";
-import magnoliaImage from "../../assets/products-img/magnolia.png";
+// Import of icons
+import shipmentIcon from "../../assets/img-products/spedizioni.svg";
+import mailIcon from "../../assets/img-products/mail.svg";
 
 // Updated product data with imported images
-const productList = [
-  {
-    id: 1,
-    name: "Partenio",
-    description: "Description for Partenio",
-    imageUrl: partenioImage,
-  },
-  {
-    id: 2,
-    name: "Moringa",
-    description: "Description for Moringa",
-    imageUrl: moringaImage,
-  },
-  {
-    id: 3,
-    name: "Boswellia",
-    description: "Description for Boswellia",
-    imageUrl: boswelliaImage,
-  },
-  {
-    id: 4,
-    name: "Magnolia",
-    description: "Description for Magnolia",
-    imageUrl: magnoliaImage,
-  },
-  // Add more products as needed
-];
 
 const Products = () => {
   return (
     <div className="p">
-      <div className="p-bg"></div>
-      <div className="p-header">
-        <h1>Prodotti</h1>
+      <div className="p-bg">
+        <div className="p-top-left">
+          <h1>Funghi Medicinali</h1>
+          <p>
+            La nostra lunga collaborazione con importanti e qualificati
+            produttori cinesi di funghi in polvere ed estratti secchi ci ha
+            permesso di compilare una lista completa di prodotti sempre più
+            interessanti. Attualmente, vi offriamo una vasta gamma di funghi
+            disponibili per la consegna immediata o su ordinazione, come
+            indicato nella seguente tabella. Per ulteriori informazioni o
+            richieste, vi invitiamo a contattarci via email o telefonicamente.
+          </p>
+        </div>
+        <div className="p-top-right"></div>
       </div>
-      <div className="p-wrapper">
-        <div className="product-grid">
-          {productList.map((product) => (
-            <ProductCard
-              key={product.id}
-              id={product.id}
-              name={product.name}
-              description={product.description}
-              imageUrl={product.imageUrl}
-            />
-          ))}
+      <div className="p-details">
+        <div className="p-details-left">
+          <h1>Pronta consegna</h1>
+          <p>
+            Alcuni dei nostri prodotti sono generalmente disponibili per la
+            consegna rapida, entro 24-48 ore. Non imponiamo alcun requisito di
+            ordine minimo o di importo minimo per la fatturazione. La confezione
+            minima è di 1 kg, confezionata in sacchetti di alluminio politenato
+            termosaldati. Per ulteriori dettagli o domande, non esitate a
+            contattarci tramite email o telefono.
+          </p>
+          <div className="p-details-button">
+            <Link to="/products">Scarica lista</Link>
+          </div>
+        </div>
+        <div className="p-details-right">
+          <img src={shipmentIcon} alt=""></img>
+        </div>
+      </div>
+      <div className="p-details">
+        <div className="p-details-left">
+          <h1>Prodotti disponibili su ordinazione</h1>
+          <p>
+            La maggior parte dei nostri prodotti può essere importata su
+            richiesta del cliente. Tuttavia, a causa dei costi fissi associati
+            all'esportazione/importazione, richiediamo un ordine minimo di 5 kg
+            per ciascun prodotto. I tempi di approvvigionamento possono
+            risultare più lunghi, in genere variando dai 30 ai 40 giorni dalla
+            data dell'ordine. Offriamo una vasta gamma di prodotti disponibili
+            per l'ordine, comprendendo centinaia di opzioni. Attendiamo con
+            interesse le vostre richieste e siamo a vostra disposizione per
+            ulteriori informazioni.
+          </p>
+          <div className="p-details-button">
+            <Link to="/contact">Contattaci</Link>
+          </div>
+        </div>
+        <div className="p-details-right">
+          <img src={mailIcon} alt=""></img>
         </div>
       </div>
     </div>

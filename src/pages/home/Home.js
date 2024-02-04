@@ -92,6 +92,47 @@ const Home = () => {
           );
         })}
       </div>
+      <div className="h-analysis">
+        <div className="h-analysis-top">
+          <h1>Analisi</h1>
+          <p>
+            Ogni prodotto che consegniamo è accompagnato da un certificato di
+            analisi completo. Questo documento viene redatto direttamente dal
+            produttore, il quale effettua rigorosi controlli su ciascun lotto
+            per garantire la conformità a tutte le specifiche richieste. I
+            nostri prodotti possono essere categorizzati in due tipologie:
+          </p>
+        </div>
+        <div className="h-analysis-types">
+          <div className="h-analysis-left">
+            <p>
+              Standardizzati (la maggior parte): Garantiamo un contenuto minimo
+              di principi attivi, il quale deve essere rigorosamente rispettato;
+              in caso contrario, il lotto viene respinto.
+            </p>
+          </div>
+          <div className="h-analysis-right">
+            <p>
+              Non standardizzati: Garantiamo un rapporto fisso tra la droga e
+              l'estratto, ma il contenuto di principi attivi può variare
+              leggermente da un lotto all'altro.
+            </p>
+          </div>
+        </div>
+        <div className="h-analysis-bottom">
+          <p>
+            Nei certificati di analisi, sono riportati dettagliatamente i
+            parametri organolettici, la granulometria, l'umidità, la carica
+            batterica, le date di produzione e di scadenza, e altri parametri
+            rilevanti. Inoltre, tutti i nostri prodotti sono certificati per
+            essere privi di OGM, glutine, irradiazione e batteri patogeni. È
+            importante sottolineare che tutti i principi attivi sono di origine
+            naturale e non sono aggiunti artificialmente. Su richiesta, possiamo
+            anche fornire ulteriori documenti come schede tecniche, schede di
+            sicurezza e schede degli allergeni.
+          </p>
+        </div>
+      </div>
       {detailsTags.second.map((item) => (
         <div className="h-priceShipTags">
           <div key={item.id} className="h-priceShipTags-left">

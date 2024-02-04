@@ -1,34 +1,66 @@
 .c {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
 }
 .c-bg {
-  background: url("../../assets/img-home/home-sfondo.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/img-contact/sfondo.png");
   background-size: cover;
-  height: 650px; /* Adjust height as needed */
-  /* z-index: -1; */
+  height: 650px;
+  padding: 10em;
+  gap: 20px;
 }
+
+.c-top-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  color: white;
+}
+.c-top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  color: white;
+}
+.c-top-right img,
+.c-top-left img {
+  margin-top: 100px;
+  width: 10%;
+}
+
 .c-wrapper {
   padding: 100px 0 50px 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally within the .c-wrapper */
+  align-items: center;
   justify-content: center;
-  text-align: center;
 }
-
+.c-wrapper-title {
+  color: var(--light-green);
+}
 form {
   width: 50%; /* Set the form width to 50% of the .c-wrapper width */
-  max-width: 400px; /* You can adjust the maximum width as needed */
+  max-width: 600px; /* You can adjust the maximum width as needed */
+}
+.name-fields {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* This will ensure there is space between the two inputs */
 }
 
+.name-fields input {
+  width: calc(
+    50% - 3px
+  ); /* Adjust the 5px if you want more or less space between the inputs */
+  margin-bottom: 5px; /* Maintain consistency with the vertical spacing of other inputs */
+}
 input {
   width: 100%;
   height: 50px;
-  border: none;
-  border-bottom: 1px solid black;
-  margin: 10px 0px;
+  border: 1px solid black;
   font-size: 15px;
   padding-left: 10px;
   outline: none;
@@ -36,19 +68,19 @@ input {
 
 textarea {
   width: 100%;
-  margin: 10px 0px;
+  margin-top: 5px;
   font-size: 15px;
   padding-left: 10px;
   outline: none;
-  border: none;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 
 /* Button style */
-
 .c-wrapper button {
-  background-color: #56a635; /* Initial color */
-  color: black;
+  width: 100%;
+  margin: 40px 0;
+  background-color: #104924;
+  color: white;
   border: none;
   padding: 15px 70px;
   border-radius: 30px;
@@ -59,6 +91,6 @@ textarea {
 
 /* Hover effect */
 .c-wrapper button:hover {
-  background-color: #104924;
-  color: white;
+  background-color: #56a635;
+  color: black;
 }

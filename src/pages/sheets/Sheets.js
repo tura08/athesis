@@ -7,12 +7,8 @@ const Sheets = () => {
     <div className="ts">
       <div className="ts-bg"></div>
       <div className="ts-wrapper">
-        <div className="ts-left">
-          <h1>Schede Tecniche</h1>
-        </div>
-        <div className="ts-right">
-          {/* <img src={home} alt="" className="h-image"></img> */}
-        </div>
+        <div className="ts-left"></div>
+        <div className="ts-right"></div>
       </div>
     </div>
   );

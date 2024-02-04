@@ -1,19 +1,63 @@
 .p {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
 }
 .p-bg {
-  background: url("../../assets/img-home/home-sfondo.png");
+  display: flex;
+  justify-content: center;
+  background: url("../../assets/img-products/sfondo.png");
   background-size: cover;
-  height: 650px; /* Adjust height as needed */
-  /* z-index: -1; */
+  height: 650px;
+  padding: 10em;
+  gap: 20px;
 }
-.p-header {
-  text-align: center;
-  /* Add more styling as needed, such as background color, font size, etc. */
+.p-bg h1 {
+  text-align: left;
 }
+.p-top-left {
+  flex: 1;
+  margin-top: 100px;
+  color: white;
+}
+.p-top-right {
+  flex: 2;
+}
+.p-details {
+  display: flex;
+  margin: 60px 0;
+  padding: 30px 10em;
+  gap: 100px;
+}
+.p-details h1 {
+  color: var(--light-green);
+  text-align: left;
+}
+.p-details-left {
+  flex: 2;
+}
+.p-details-right {
+  flex: 1;
+}
+.p-details-right img {
+  margin: 50px;
+  width: 50%;
+}
+.p-details-button {
+  margin-top: 50px;
+}
+.p-details-button a {
+  justify-content: center;
+  text-decoration: none; /* Remove the default underline */
+  color: white; /* Set the text color to green */
+  padding: 15px 70px;
+  border-radius: 30px;
+  background-color: #104924; /* Set the initial background to transparent */
+  transition: background-color 0.3s, color 0.3s;
+}
+.p-details-button a:hover {
+  background-color: #4fde4f; /* Set the background color to light green on hover */
+  color: black;
+  border: 1px solid white;
+}
+
 .p-wrapper {
   display: flex;
   justify-content: center;

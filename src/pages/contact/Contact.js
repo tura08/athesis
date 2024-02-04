@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Contact.css";
 
+import telIcon from "../../assets/img-contact/telefono.svg";
+import emailIcon from "../../assets/img-contact/mail.svg";
 // const googleAPI = process.env.REACT_APP_GOOGLE_API;
 
 const Contact = () => {
@@ -35,14 +37,28 @@ const Contact = () => {
 
   return (
     <div className="c">
-      <div className="c-bg"></div>
-      <h1>Per qualsiasi richiesta non esitare a contattarci!</h1>
+      <div className="c-bg">
+        <div className="c-top-left">
+          <img src={telIcon} alt=""></img>
+          <h2>Telefono</h2>
+          <p>+39 3482664035</p>
+        </div>
+        <div className="c-top-right">
+          <img src={emailIcon} alt=""></img>
+          <h2>Email</h2>
+          <p>info@athesis-herbs.com</p>
+        </div>
+      </div>
       <div className="c-wrapper">
+        <h1 className="c-wrapper-title">Contattaci</h1>
         <form onSubmit={(e) => Submit(e)}>
-          <input type="text" placeholder="Name" name="name" required />
+          <div className="name-fields">
+            <input type="text" placeholder="Nome" name="name" required />
+            <input type="text" placeholder="Cognome" name="surname" required />
+          </div>
           <input type="text" placeholder="Email" name="email" required />
-          <textarea rows="10" placeholder="Message" name="message" required />
-          <button>Submit</button>
+          <textarea rows="10" placeholder="Messaggio" name="message" required />
+          <button>Invia</button>
         </form>
       </div>
     </div>
