@@ -5,7 +5,7 @@
   justify-content: center;
   background: url("../../assets/img-products/sfondo.png");
   background-size: cover;
-  height: 650px;
+  height: 550px;
   padding: 10em;
   gap: 20px;
 }
@@ -13,12 +13,12 @@
   text-align: left;
 }
 .p-top-left {
-  flex: 1;
-  margin-top: 100px;
+  flex: 2;
+  margin-top: 20px;
   color: white;
 }
 .p-top-right {
-  flex: 2;
+  flex: 3;
 }
 .p-details {
   display: flex;

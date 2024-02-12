@@ -5,12 +5,38 @@
   overflow: hidden;
 }
 .a-bg {
-  background: url("../../assets/img-home/home-sfondo.png");
+  background: url("../../assets/img-about/sfondo.png");
   background-size: cover;
-  height: 650px; /* Adjust height as needed */
+  height: 550px; /* Adjust height as needed */
   /* z-index: -1; */
 }
 .a-wrapper {
-  display: flex;
+  margin: 20px;
+}
+.a-wrapper h1 {
+  color: var(--light-green);
+  padding-top: 50px;
+  text-align: center;
+}
+.a-wrapper p {
+  text-align: justify;
+  padding: 30px 20%;
+}
+
+.a-button {
+  padding: 50px 0;
+}
+.a-button a {
   justify-content: center;
+  text-decoration: none; /* Remove the default underline */
+  color: white; /* Set the text color to green */
+  padding: 15px 70px;
+  border-radius: 30px;
+  background-color: #104924; /* Set the initial background to transparent */
+  transition: background-color 0.3s, color 0.3s;
+}
+.a-button a:hover {
+  background-color: #4fde4f; /* Set the background color to light green on hover */
+  color: black;
+  border: 1px solid white;
 }

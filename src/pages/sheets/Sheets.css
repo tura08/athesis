@@ -5,12 +5,51 @@
   overflow: hidden;
 }
 .ts-bg {
-  background: url("../../assets/img-home/home-sfondo.png");
+  background: url("../../assets/img-sheets/sfondo.png");
   background-size: cover;
-  height: 650px; /* Adjust height as needed */
+  height: 100%; /* Adjust height as needed */
   /* z-index: -1; */
 }
 .ts-wrapper {
+  margin-top: 200px;
+  padding: 20px;
+  color: white;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the space between the cards */
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.products-card {
+  flex: 0 0 calc(37% - 5px); /* Adjust width for two columns, subtracting the gap */
+  box-sizing: border-box;
+  height: 50px; /* Adjust the height of each card if needed */
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Removes underline from links */
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  padding: 10px; /* Padding inside the card */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products-card:hover {
+  background-color: var(--light-green); /* Changes background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+.products-name {
+  font-size: 13px; /* Adjust font size as needed */
+  color: black; /* Dark grey color for the text */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .ts-wrapper {
+    justify-content: center;
+  }
+
+  .products-card {
+    flex: 0 0 100%; /* Full width for smaller screens */
+  }
 }
