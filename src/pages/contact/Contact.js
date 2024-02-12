@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Contact.css";
 
+import emailjs from "@emailjs/browser";
+
 import telIcon from "../../assets/img-contact/telefono.svg";
 import emailIcon from "../../assets/img-contact/mail.svg";
 // const googleAPI = process.env.REACT_APP_GOOGLE_API;
@@ -9,6 +11,7 @@ import emailIcon from "../../assets/img-contact/mail.svg";
 const Contact = () => {
   function Submit(e) {
     e.preventDefault();
+
     const googleAPI =
       "https://script.google.com/macros/s/AKfycbyXaRdX7bz-SH4lxpwhq5KqJnFymEvM5fr5XcEM9DZFKGJ-3WioQ2yjdR7-ysi3fLy2UQ/exec";
     const formEle = document.querySelector("form");
@@ -33,6 +36,26 @@ const Contact = () => {
       .catch((error) => {
         console.log(error);
       });
+
+    // Sending data to EmailJS
+    const form = e.target;
+    emailjs
+      .sendForm(
+        "service_1ooou8g",
+        "template_0ianvtg",
+        form,
+        "Rih8Wv0aVWJCpPMGO"
+      )
+      .then(
+        (result) => {
+          console.log("EmailJS Success:", result.text);
+          window.alert("Thank you! Message sent.");
+          window.location.reload();
+        },
+        (error) => {
+          console.error("EmailJS Error:", error.text);
+        }
+      );
   }
 
   return (
@@ -53,10 +76,15 @@ const Contact = () => {
         <h1 className="c-wrapper-title">Contattaci</h1>
         <form onSubmit={(e) => Submit(e)}>
           <div className="name-fields">
-            <input type="text" placeholder="Nome" name="name" required />
-            <input type="text" placeholder="Cognome" name="surname" required />
+            <input type="text" placeholder="Nome" name="user_name" required />
+            <input
+              type="text"
+              placeholder="Cognome"
+              name="user_subject"
+              required
+            />
           </div>
-          <input type="text" placeholder="Email" name="email" required />
+          <input type="text" placeholder="Email" name="user_email" required />
           <textarea rows="10" placeholder="Messaggio" name="message" required />
           <button>Invia</button>
         </form>
