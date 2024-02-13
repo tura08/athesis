@@ -71,7 +71,16 @@
 }
 
 @media (max-width: 768px) {
+  .p-bg {
+    flex-direction: column;
+    align-items: center;
+    padding: 50% 10%;
+  }
   .product-grid {
     grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+  .p-details {
+    flex-direction: column;
+    padding: 0 10%;
   }
 }

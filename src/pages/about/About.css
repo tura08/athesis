@@ -40,3 +40,11 @@
   color: black;
   border: 1px solid white;
 }
+@media (max-width: 768px) {
+  .a-wrapper {
+    padding: 0 10%;
+  }
+  .a-wrapper p {
+    padding: 0;
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ProductCard.css"; // Ensure you create this CSS file
+import "./ProductCardHome.css"; // Ensure you create this CSS file
 
-const ProductCard = ({ id, name, description, price, imageUrl }) => {
+const ProductCardHome = ({ id, name, description, price, imageUrl }) => {
   return (
     <Link to={`/product/${id}`} className="product-card">
       <div className="product-info">
@@ -15,4 +15,4 @@ const ProductCard = ({ id, name, description, price, imageUrl }) => {
   );
 };
 
-export default ProductCard;
+export default ProductCardHome;

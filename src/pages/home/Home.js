@@ -4,7 +4,7 @@ import "./Home.css";
 
 import athesis from "../../assets/athesis.svg";
 
-import ProductCard from "../../components/product-card/ProductCard";
+import ProductCardHome from "../../components/product-card/ProductCardHome";
 
 // Data
 import { carosello, productList, detailsTags } from "../../assets/data";
@@ -54,7 +54,7 @@ const Home = () => {
         </div>
         <div className="h-product-grid">
           {productList.map((product) => (
-            <ProductCard
+            <ProductCardHome
               key={product.id}
               id={product.id}
               name={product.name}

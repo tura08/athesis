@@ -94,3 +94,14 @@ textarea {
   background-color: #56a635;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .c-bg {
+    flex-direction: column;
+    padding: 10% 10%;
+    gap: 0;
+  }
+  form {
+    width: 80%;
+  }
+}

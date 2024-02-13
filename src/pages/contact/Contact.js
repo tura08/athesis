@@ -13,7 +13,7 @@ const Contact = () => {
     e.preventDefault();
 
     const googleAPI =
-      "https://script.google.com/macros/s/AKfycbyXaRdX7bz-SH4lxpwhq5KqJnFymEvM5fr5XcEM9DZFKGJ-3WioQ2yjdR7-ysi3fLy2UQ/exec";
+      "https://script.google.com/macros/s/AKfycbxifqYbR3j-xZPLZyvG1aOyUx_7-mFDOPye5vD6p4YwPqa8TJ_dQlILWEm2EU2oiLmRSA/exec";
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
 
