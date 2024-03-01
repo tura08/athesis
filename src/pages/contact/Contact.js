@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Contact.css";
 
@@ -10,6 +10,10 @@ import ContactFormResponse from "../../components/contact-form-response/ContactF
 // const googleAPI = process.env.REACT_APP_GOOGLE_API;
 
 const Contact = () => {
+  useEffect(() => {
+    // Scrolls to the top of the page
+    window.scrollTo(0, 0);
+  }, []);
   const [isSubmitted, setIsSubmitted] = useState(false);
   function Submit(e) {
     e.preventDefault();
@@ -62,6 +66,7 @@ const Contact = () => {
   if (isSubmitted) {
     return <ContactFormResponse />;
   }
+
   return (
     <div className="c">
       <div className="c-bg">

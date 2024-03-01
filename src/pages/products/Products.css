@@ -20,11 +20,38 @@
 .p-top-right {
   flex: 3;
 }
+/* Primo blocco sul numero di prodotti offerti */
+.p-listing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3% 10%;
+}
+.p-listing-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.p-listing-details-item {
+  background-color: var(--bg-light-green);
+  padding: 40px;
+}
+.p-listing-details-item h2 {
+  color: var(--light-green);
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.p-listing-details-item p {
+  text-align: center;
+  padding: 20px;
+}
 .p-details {
   display: flex;
   align-items: center;
   margin: 60px 0;
-  padding: 30px 10em;
+  padding: 30px 10%;
   gap: 100px;
 }
 .p-details h1 {
@@ -42,6 +69,8 @@
   width: 50%;
 }
 .p-details-button {
+  display: flex;
+  align-items: left;
   margin-top: 50px;
 }
 .p-details-button a {

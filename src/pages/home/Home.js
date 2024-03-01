@@ -1,34 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
 import athesis from "../../assets/athesis.svg";
-import quality from "../../assets/img-home/quality.svg";
+import iconProducts from "../../assets/img-home/scatole.svg";
 
 import ProductCardHome from "../../components/product-card/ProductCardHome";
 
 // Data
-import { carosello, productList, detailsTags } from "../../assets/data";
+import { productList, detailsTags } from "../../assets/data";
 
 const Home = () => {
+  useEffect(() => {
+    // Scrolls to the top of the page
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="h">
       <div className="h-bg">
         <div className="h-top">
           <img src={athesis} alt="Company Logo" />
           <h3>di Turazza Marco</h3>
-          {/* <p>
-            Benvenuti nel mondo di Athesis, dove l'eccellenza italiana
-            nell'importazione e distribuzione all'ingrosso prende forma
-            attraverso una selezionata gamma di estratti e polveri di piante e
-            funghi, destinati all'uso alimentare. Forti di oltre un quarto di
-            secolo di esperienza, offriamo ingredienti naturali selezionati per
-            la loro qualità superiore. La nostra missione è fornire alle aziende
-            di integratori alimentari materie prime sicure e tracciabili che
-            esaltano il valore nutrizionale e il gusto dei prodotti. Con
-            Athesis, vi garantiamo un servizio professionale e attento alle
-            vostre esigenze.
-          </p> */}
           <p>
             Benvenuti nel mondo di Athesis, un'azienda italiana specializzata
             nell'importazione e distribuzione all'ingrosso di estratti e polveri
@@ -44,30 +36,59 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="h-carosello">
-        {carosello.first.map((item) => {
-          return (
-            <img
-              src={item.image}
-              key={item.id}
-              alt={item.id}
-              className="h-carosello-image"
-            ></img>
-          );
-        })}
-      </div>
       <div className="h-quality">
-        <div className="h-quality-left">
-          <h1 className="h-title">{detailsTags.quality.header}</h1>
-          <p>{detailsTags.quality.descriptionTag}</p>
-        </div>
-        <div className="h-quality-right">
-          <img src={quality} alt=""></img>
+        <h1 className="h-title">{detailsTags.quality.header}</h1>
+        <div className="h-quality-details">
+          <span className="h-quality-details-item">
+            <h2>Tradizione Incontra Innovazione</h2>
+            <p>
+              Athesis collabora con aziende che uniscono la sapienza
+              tradizionale nella coltivazione di erbe autoctone e piante locali
+              alla tecnologia avanzata. Questo garantisce la raccolta delle
+              materie prime nel momento più propizio, quando i principi attivi
+              sono più concentrati e bilanciati.
+            </p>
+          </span>
+          <span className="h-quality-details-item">
+            <h2>Purità e Potenza degli Estratti</h2>
+            <p>
+              Athesis collabora con aziende che uniscono la sapienza
+              tradizionale nella coltivazione di erbe autoctone e piante locali
+              alla tecnologia avanzata. Questo garantisce la raccolta delle
+              materie prime nel momento più propizio, quando i principi attivi
+              sono più concentrati e bilanciati.
+            </p>
+          </span>
+          <span className="h-quality-details-item">
+            <h2>Partnership Strategiche per la Qualità</h2>
+            <p>
+              Athesis si affida a una rete selezionata di fornitori cinesi per
+              la qualità e l'integrità dei suoi estratti, i quali si avvalgono
+              della loro esperienza locale e della conoscenza approfondita delle
+              pratiche di coltivazione e di estrazione per offrire prodotti di
+              alta qualità.
+            </p>
+          </span>
         </div>
       </div>
+      {detailsTags.first.map((item) => (
+        <div className="h-price-shipment">
+          <div key={item.id} className="h-price-shipment-left">
+            <h1 className="h-price-shipment-title">{item.header}</h1>
+            <p>{item.descriptionTag}</p>
+          </div>
+          <div className="h-price-shipment-right">
+            <img
+              src={item.imageTag}
+              alt="iconTag"
+              className="h-price-shipment-image"
+            />
+          </div>
+        </div>
+      ))}
       <div className="h-bestSellers">
         <div className="h-bestSellers-header">
-          <h1>I più venduti</h1>
+          <h1>I nostri bestsellers</h1>
           <p>Alcuni dei prodotti preferiti dai nostri clienti</p>
         </div>
         <div className="h-product-grid">
@@ -82,43 +103,28 @@ const Home = () => {
           ))}
         </div>
       </div>
-      {detailsTags.first.map((item) => (
-        <div className="h-priceShipTags">
-          <div key={item.id} className="h-priceShipTags-left">
-            <h1 className="h-priceShipTags-title">{item.header}</h1>
-            <p>{item.descriptionTag}</p>
-          </div>
-          <div className="h-priceShipTags-right">
-            <img
-              src={item.imageTag}
-              alt="iconTag"
-              className="h-priceShipTags-image"
-            />
+      <div className="h-products">
+        <div className="h-products-left">
+          <h1>Scopri il nostro mondo di prodotti</h1>
+          <p>
+            Da oltre un quarto di secolo, ci impegniamo a offrire una vasta
+            gamma di prodotti di alta qualità, con un catalogo che oggi supera i
+            1000 articoli, ognuno selezionato per soddisfare le diverse esigenze
+            dei nostri clienti. Vi invitiamo a esplorare la nostra ricca
+            selezione nella pagina dei prodotti, dove troverete soluzioni
+            innovative e tradizionali adatte a ogni vostra esigenza.
+          </p>
+          <div className="h-products-button">
+            <Link to="/products">Prodotti</Link>
           </div>
         </div>
-      ))}
-      <div className="h-carosello">
-        {carosello.second.map((item) => {
-          return (
-            <img
-              src={item.image}
-              key={item.id}
-              alt={item.id}
-              className="h-carosello-image"
-            ></img>
-          );
-        })}
+        <div className="h-products-right">
+          <img src={iconProducts} alt=""></img>
+        </div>
       </div>
       <div className="h-analysis">
         <div className="h-analysis-top">
           <h1>Analisi</h1>
-          {/* <p>
-            Ogni prodotto che consegniamo è accompagnato da un certificato di
-            analisi completo. Questo documento viene redatto direttamente dal
-            produttore, il quale effettua rigorosi controlli su ciascun lotto
-            per garantire la conformità a tutte le specifiche richieste. I
-            nostri prodotti possono essere categorizzati in due tipologie:
-          </p> */}
           <p>
             La nostra gamma di materie prime si articola in tre categorie
             principali, ciascuna con caratteristiche uniche per soddisfare le
@@ -149,17 +155,6 @@ const Home = () => {
           </div>
         </div>
         <div className="h-analysis-bottom">
-          {/* <p>
-            Nei certificati di analisi, sono riportati dettagliatamente i
-            parametri organolettici, la granulometria, l'umidità, la carica
-            batterica, le date di produzione e di scadenza, e altri parametri
-            rilevanti. Inoltre, tutti i nostri prodotti sono certificati per
-            essere privi di OGM, glutine, irradiazione e batteri patogeni. È
-            importante sottolineare che tutti i principi attivi sono di origine
-            naturale e non sono aggiunti artificialmente. Su richiesta, possiamo
-            anche fornire ulteriori documenti come schede tecniche, schede di
-            sicurezza e schede degli allergeni.
-          </p> */}
           <p>
             Ogni lotto è accompagnato da un certificato di analisi che ne
             conferma qualità e conformità alle nostre rigorose specifiche,
@@ -170,16 +165,16 @@ const Home = () => {
         </div>
       </div>
       {detailsTags.second.map((item) => (
-        <div className="h-priceShipTags">
-          <div key={item.id} className="h-priceShipTags-left">
-            <h1 className="h-priceShipTags-title">{item.header}</h1>
+        <div className="h-package-sample">
+          <div key={item.id} className="h-package-sample-left">
+            <h1 className="h-package-sample-title">{item.header}</h1>
             <p>{item.descriptionTag}</p>
           </div>
-          <div className="h-priceShipTags-right">
+          <div className="h-package-sample-right">
             <img
               src={item.imageTag}
               alt="iconTag"
-              className="h-priceShipTags-image"
+              className="h-package-sample-image"
             />
           </div>
         </div>

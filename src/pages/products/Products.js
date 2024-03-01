@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
 
@@ -9,6 +9,10 @@ import mailIcon from "../../assets/img-products/mail.svg";
 // Updated product data with imported images
 
 const Products = () => {
+  useEffect(() => {
+    // Scrolls to the top of the page
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="p">
       <div className="p-bg">
@@ -38,6 +42,32 @@ const Products = () => {
           </p> */}
         </div>
         <div className="p-top-right"></div>
+      </div>
+      <div className="p-listing">
+        <h1 className="p-title"></h1>
+        <div className="p-listing-details">
+          <span className="p-listing-details-item">
+            <h2>Oltre 1000 Soluzioni Naturali per il Tuo Benessere</h2>
+            <p>
+              Nel nostro impegno costante verso l'eccellenza, ci focalizziamo
+              sulla qualità senza compromessi, offrendo una vasta gamma di oltre
+              1000 prodotti accuratamente selezionati. Il nostro assortimento
+              spazia dalle piante medicinali ai funghi ricchi di proprietà
+              benefiche, passando per le alghe nutrienti e gli enzimi essenziali
+              per il benessere.
+            </p>
+          </span>
+          <span className="p-listing-details-item">
+            <h2>Qualità e Natura: Il Cuore della Nostra Selezione</h2>
+            <p>
+              Ogni prodotto nel nostro catalogo è frutto di una rigorosa
+              selezione, garantendo che solo il meglio della natura arrivi fino
+              a voi. Siamo orgogliosi di fornire soluzioni naturali di alta
+              qualità, supportando la vostra salute e il vostro benessere con
+              prodotti derivati da fonti sostenibili e responsabili.
+            </p>
+          </span>
+        </div>
       </div>
       <div className="p-details">
         <div className="p-details-left">
@@ -78,17 +108,6 @@ const Products = () => {
       <div className="p-details">
         <div className="p-details-left">
           <h1>Prodotti disponibili su ordinazione</h1>
-          {/* <p>
-            La maggior parte dei nostri prodotti può essere importata su
-            richiesta del cliente. Tuttavia, a causa dei costi fissi associati
-            all'esportazione/importazione, richiediamo un ordine minimo di 5 kg
-            per ciascun prodotto. I tempi di approvvigionamento possono
-            risultare più lunghi, in genere variando dai 30 ai 40 giorni dalla
-            data dell'ordine. Offriamo una vasta gamma di prodotti disponibili
-            per l'ordine, comprendendo centinaia di opzioni. Attendiamo con
-            interesse le vostre richieste e siamo a vostra disposizione per
-            ulteriori informazioni.
-          </p> */}
           <p>
             La nostra capacità di soddisfare le richieste su misura si estende
             all'importazione di prodotti specifici per incontrare le esigenze

@@ -2,68 +2,10 @@ import reishi from "../assets/img-home/reishi.jpg";
 import hericium from "../assets/img-home/hericium.jpeg";
 import ginger from "../assets/img-home/zenzero.jpg";
 
-import caros1 from "../assets/img-home/Carosello1.png";
-import caros2 from "../assets/img-home/Carosello2.png";
-import caros3 from "../assets/img-home/Carosello3.png";
-import caros4 from "../assets/img-home/Carosello4.png";
-import caros5 from "../assets/img-home/Carosello5.png";
-import caros6 from "../assets/img-home/Carosello6.png";
-import caros7 from "../assets/img-home/Carosello7.png";
-import caros8 from "../assets/img-home/Carosello8.png";
-import caros9 from "../assets/img-home/Carosello9.png";
-import caros10 from "../assets/img-home/Carosello10.png";
-
 import priceTag from "../assets/img-home/prezzi.svg";
 import shipmentTag from "../assets/img-home/spedizioni.svg";
 import packageTag from "../assets/img-home/confezioni.svg";
 import sampleTag from "../assets/img-home/campioni.svg";
-
-const carosello = {
-  first: [
-    {
-      id: 1,
-      image: caros1,
-    },
-    {
-      id: 2,
-      image: caros2,
-    },
-    {
-      id: 3,
-      image: caros3,
-    },
-    {
-      id: 4,
-      image: caros4,
-    },
-    {
-      id: 5,
-      image: caros5,
-    },
-  ],
-  second: [
-    {
-      id: 1,
-      image: caros6,
-    },
-    {
-      id: 2,
-      image: caros7,
-    },
-    {
-      id: 3,
-      image: caros8,
-    },
-    {
-      id: 4,
-      image: caros9,
-    },
-    {
-      id: 5,
-      image: caros10,
-    },
-  ],
-};
 
 const productList = [
   {
@@ -310,4 +252,4 @@ const productsST = [
     pdfLink: "/pdfTS/ST_Zenzero_ES_5.pdf",
   },
 ];
-export { carosello, productList, detailsTags, productsST };
+export { productList, detailsTags, productsST };

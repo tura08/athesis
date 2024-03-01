@@ -35,39 +35,62 @@
   color: white;
   border: 1px solid white;
 }
-/* Carosello */
-.h-carosello {
-  padding-top: 3em;
-  margin-bottom: 5em;
+
+/* Titoli interni a vari blocchi */
+.h-title {
+  color: var(--light-green);
 }
-.h-carosello img {
-  margin-top: 30px;
-  gap: 10px;
-  max-height: 200px;
-}
-.h-carosello-image {
-  margin: 0 1%;
-}
+
 /* Primo blocco su qualità */
 .h-quality {
   display: flex;
+  flex-direction: column;
+  padding: 8% 10%;
+  gap: 40px;
+}
+.h-quality-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+.h-quality-details-item {
+  background-color: var(--bg-light-green);
+  padding: 20px 30px;
+}
+.h-quality-details-item h2 {
+  color: var(--light-green);
+  text-align: left;
+  font-size: 20px;
+}
+.h-quality-details-item p {
+  text-align: left;
+}
+
+/* Blocco per prezzi e spedizioni */
+.h-price-shipment {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 10% 100px 10%;
-  gap: 100px;
+  padding: 0 10%;
+  gap: 50px;
+  margin-bottom: 100px;
 }
-.h-quality-left {
-  flex: 3;
-  align-items: left;
+.h-price-shipment:nth-child(2n) {
+  flex-direction: row-reverse;
 }
-.h-quality-right {
+.h-price-shipment-title {
+  color: var(--light-green);
+  text-align: left;
+}
+.h-price-shipment-left {
   flex: 1;
 }
-.h-quality-right img {
-  height: 250px;
+.h-price-shipment-right {
+  flex: 1;
 }
-.h-title {
-  color: var(--light-green);
+.h-price-shipment-image {
+  width: 40%;
+  /* background-color: aqua; */
 }
 
 /* Secondo blocco su prodotti più venduti */
@@ -92,32 +115,44 @@
   margin: 50px 8%;
   color: black;
 }
-
-/* Blocco per prezzi e spedizioni */
-.h-priceShipTags {
+/* Blocco su prodotti */
+.h-products {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 100px;
-  margin: 5% 0;
-  padding: 0 10%;
+  padding: 150px 10%;
+  gap: 50px;
 }
-.h-priceShipTags:nth-child(2n) {
-  flex-direction: row-reverse;
-}
-.h-priceShipTags-title {
+.h-products h1 {
   color: var(--light-green);
   text-align: left;
 }
-.h-priceShipTags-left {
+.h-products-left {
+  flex: 2;
+}
+.h-products-right {
   flex: 1;
 }
-.h-priceShipTags-right {
-  flex: 1;
+.h-products-right img {
+  width: 50%;
 }
-.h-priceShipTags-image {
-  margin: 5%;
-  width: 60%;
+.h-products-button {
+  display: flex;
+  align-items: left;
+  margin-top: 50px;
+}
+.h-products-button a {
+  justify-content: center;
+  text-decoration: none; /* Remove the default underline */
+  color: white; /* Set the text color to green */
+  padding: 15px 70px;
+  border-radius: 30px;
+  background-color: #104924; /* Set the initial background to transparent */
+  transition: background-color 0.3s, color 0.3s;
+}
+.h-products-button a:hover {
+  background-color: #56a635; /* Set the background color to light green on hover */
+  color: black;
+  border: 1px solid white;
 }
 
 /* Blocco per analisi */
@@ -128,7 +163,7 @@
   background: url("../../assets/img-home/sfondoanalisi.jpg");
   background-size: cover;
   margin: 0;
-  padding: 5% 10%;
+  padding: 8% 10%;
   color: white;
   align-items: center;
 }
@@ -150,6 +185,32 @@
   padding: 35px;
   background-color: var(--dark-green);
 }
+/* Blocco per prezzi e spedizioni */
+.h-package-sample {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  gap: 50px;
+  margin: 100px 0;
+}
+.h-package-sample:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+.h-package-sample-title {
+  color: var(--light-green);
+  text-align: left;
+}
+.h-package-sample-left {
+  flex: 1;
+}
+.h-package-sample-right {
+  flex: 1;
+}
+.h-package-sample-image {
+  width: 40%;
+  /* background-color: aqua; */
+}
 
 /* Responsive design: Stacks blocks on smaller screens */
 @media (max-width: 768px) {
@@ -170,10 +231,10 @@
     grid-template-columns: repeat(1, 1fr);
     margin: 40px 40px;
   }
-  .h-priceShipTags {
+  .h-price-shipment {
     flex-direction: column;
   }
-  .h-priceShipTags:nth-child(2n) {
+  .h-price-shipment:nth-child(2n) {
     flex-direction: column;
   }
   .h-analysis {

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./About.css";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  useEffect(() => {
+    // Scrolls to the top of the page
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="a">
       <div className="a-bg"></div>
