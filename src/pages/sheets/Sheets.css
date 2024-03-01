@@ -5,13 +5,14 @@
   overflow: hidden;
 }
 .ts-bg {
-  background: url("../../assets/img-sheets/sfondo.png");
+  background: url("../../assets/img-sheets/sfondo.jpg");
   background-size: cover;
   height: 100%; /* Adjust height as needed */
   /* z-index: -1; */
 }
 .ts-wrapper {
-  margin-top: 200px;
+  margin-top: 150px;
+  margin-bottom: 100px;
   padding: 20px;
   color: white;
   display: flex;
@@ -20,36 +21,65 @@
   justify-content: space-around;
   align-items: flex-start;
 }
+.ts-wrapper p {
+  text-align: justify;
+  padding: 20px 10%;
+}
+.ts-product-card {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Define two columns of equal width */
+  column-gap: 80px; /* Increase space between columns horizontally */
+  row-gap: 20px; /* Maintain or adjust vertical spacing as desired */
+  justify-content: center; /* Center grid items horizontally if there's extra space */
+}
+
 .products-card {
-  flex: 0 0 calc(37% - 5px); /* Adjust width for two columns, subtracting the gap */
   box-sizing: border-box;
-  height: 50px; /* Adjust the height of each card if needed */
+  height: 40px; /* Adjust to 'auto' for dynamic height based on content */
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-decoration: none; /* Removes underline from links */
   display: flex;
-  align-items: center; /* Centers items vertically */
-  padding: 10px; /* Padding inside the card */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  padding: 20px; /* Increase padding inside the card for wider appearance */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensure card uses full column width */
 }
+
+/* .products-card {
+  flex: 0 0 calc(40% - 20px);
+  box-sizing: border-box;
+  height: 40px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+} */
 
 .products-card:hover {
   background-color: var(--light-green); /* Changes background color on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
 }
+.products-info {
+  display: flex; /* Enable flexbox for this container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Take full width of the parent */
+}
 .products-name {
-  font-size: 13px; /* Adjust font size as needed */
+  font-size: 12px; /* Adjust font size as needed */
   color: black; /* Dark grey color for the text */
   margin: 0;
 }
 
 @media (max-width: 768px) {
-  .ts-wrapper {
-    justify-content: center;
-  }
-
-  .products-card {
-    flex: 0 0 100%; /* Full width for smaller screens */
+  .ts-product-card {
+    grid-template-columns: 1fr; /* Switch to single column layout for smaller screens */
   }
 }

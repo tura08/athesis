@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 import athesis from "../../assets/athesis.svg";
+import quality from "../../assets/img-home/quality.svg";
 
 import ProductCardHome from "../../components/product-card/ProductCardHome";
 
@@ -16,11 +17,27 @@ const Home = () => {
         <div className="h-top">
           <img src={athesis} alt="Company Logo" />
           <h3>di Turazza Marco</h3>
+          {/* <p>
+            Benvenuti nel mondo di Athesis, dove l'eccellenza italiana
+            nell'importazione e distribuzione all'ingrosso prende forma
+            attraverso una selezionata gamma di estratti e polveri di piante e
+            funghi, destinati all'uso alimentare. Forti di oltre un quarto di
+            secolo di esperienza, offriamo ingredienti naturali selezionati per
+            la loro qualità superiore. La nostra missione è fornire alle aziende
+            di integratori alimentari materie prime sicure e tracciabili che
+            esaltano il valore nutrizionale e il gusto dei prodotti. Con
+            Athesis, vi garantiamo un servizio professionale e attento alle
+            vostre esigenze.
+          </p> */}
           <p>
-            Benvenuti in Athesis un'azienda italiana specializzata in
-            nell'importazione e distribuzione all'ingrosso di estratti di piante
-            e funghi per uso alimentare. Da oltre 20 anni trattiamo ingredienti
-            naturali e di alta qualità.
+            Benvenuti nel mondo di Athesis, un'azienda italiana specializzata
+            nell'importazione e distribuzione all'ingrosso di estratti e polveri
+            di piante e funghi per l'uso alimentare. Forti di oltre un quarto di
+            secolo di esperienza, offriamo ingredienti naturali selezionati per
+            la loro qualità superiore. La nostra missione è fornire alle aziende
+            di integratori alimentari materie prime sicure e tracciabili. Con
+            Athesis, vi garantiamo un servizio professionale e attento alle
+            vostre esigenze.
           </p>
           <div className="h-top-button">
             <Link to="/contact">Contattaci</Link>
@@ -42,9 +59,10 @@ const Home = () => {
       <div className="h-quality">
         <div className="h-quality-left">
           <h1 className="h-title">{detailsTags.quality.header}</h1>
+          <p>{detailsTags.quality.descriptionTag}</p>
         </div>
         <div className="h-quality-right">
-          <p>{detailsTags.quality.descriptionTag}</p>
+          <img src={quality} alt=""></img>
         </div>
       </div>
       <div className="h-bestSellers">
@@ -59,8 +77,7 @@ const Home = () => {
               id={product.id}
               name={product.name}
               description={product.description}
-              price={product.price}
-              imageUrl={product.imageUrl}
+              nomeBotanico={product.nomeBotanico}
             />
           ))}
         </div>
@@ -95,32 +112,44 @@ const Home = () => {
       <div className="h-analysis">
         <div className="h-analysis-top">
           <h1>Analisi</h1>
-          <p>
+          {/* <p>
             Ogni prodotto che consegniamo è accompagnato da un certificato di
             analisi completo. Questo documento viene redatto direttamente dal
             produttore, il quale effettua rigorosi controlli su ciascun lotto
             per garantire la conformità a tutte le specifiche richieste. I
             nostri prodotti possono essere categorizzati in due tipologie:
+          </p> */}
+          <p>
+            La nostra gamma di materie prime si articola in tre categorie
+            principali, ciascuna con caratteristiche uniche per soddisfare le
+            diverse esigenze di produzione:
           </p>
         </div>
         <div className="h-analysis-types">
           <div className="h-analysis-left">
             <p>
-              Standardizzati (la maggior parte): Garantiamo un contenuto minimo
-              di principi attivi, il quale deve essere rigorosamente rispettato;
-              in caso contrario, il lotto viene respinto.
+              Le polveri, nelle loro forme più naturali, conservano
+              integralmente i principi attivi grazie a metodi di essiccazione e
+              macinazione delicati.
+            </p>
+          </div>
+          <div className="h-analysis-center">
+            <p>
+              Gli estratti standardizzati, frutto dell'innovazione, concentrano
+              sostanze attive per massimizzare purezza ed efficacia, garantendo
+              percentuali di principi attivi uniformi in ogni lotto.
             </p>
           </div>
           <div className="h-analysis-right">
             <p>
-              Non standardizzati: Garantiamo un rapporto fisso tra la droga e
-              l'estratto, ma il contenuto di principi attivi può variare
-              leggermente da un lotto all'altro.
+              Gli estratti non standardizzati garantiscono un rapporto di
+              estrazione costante che preserva l'essenza originale della materia
+              prima.
             </p>
           </div>
         </div>
         <div className="h-analysis-bottom">
-          <p>
+          {/* <p>
             Nei certificati di analisi, sono riportati dettagliatamente i
             parametri organolettici, la granulometria, l'umidità, la carica
             batterica, le date di produzione e di scadenza, e altri parametri
@@ -130,6 +159,13 @@ const Home = () => {
             naturale e non sono aggiunti artificialmente. Su richiesta, possiamo
             anche fornire ulteriori documenti come schede tecniche, schede di
             sicurezza e schede degli allergeni.
+          </p> */}
+          <p>
+            Ogni lotto è accompagnato da un certificato di analisi che ne
+            conferma qualità e conformità alle nostre rigorose specifiche,
+            assicurando prodotti naturali, privi di OGM, glutine, irradiazioni e
+            batteri patogeni. Offriamo anche documentazione tecnica e
+            informazioni sulla sicurezza.
           </p>
         </div>
       </div>

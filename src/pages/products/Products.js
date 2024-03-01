@@ -13,7 +13,7 @@ const Products = () => {
     <div className="p">
       <div className="p-bg">
         <div className="p-top-left">
-          <h1>Funghi Medicinali</h1>
+          {/* <h1>Funghi Medicinali</h1>
           <p>
             La nostra lunga collaborazione con importanti e qualificati
             produttori cinesi di funghi in polvere ed estratti secchi ci ha
@@ -22,23 +22,53 @@ const Products = () => {
             disponibili per la consegna immediata o su ordinazione, come
             indicato nella seguente tabella. Per ulteriori informazioni o
             richieste, vi invitiamo a contattarci via email o telefonicamente.
-          </p>
+          </p> */}
+          {/* <p>
+            La nostra collaborazione con rinomati produttori cinesi di polveri
+            ed estratti di funghi ha arricchito notevolmente la nostra offerta.
+            Questa partnership ci ha permesso di garantire prodotti di alta
+            qualità e di ampliare continuamente la nostra gamma con novità di
+            interesse per il mercato. Offriamo una vasta selezione di funghi in
+            polvere ed estratti per ogni esigenza, dai più comuni ai più
+            ricercati, in pronta consegna o su ordinazione. Consultate la nostra
+            dettagliata tabella per esplorare la nostra offerta. Per ulteriori
+            informazioni o richieste specifiche, il nostro team è a vostra
+            disposizione via email o telefono, pronto ad assistervi nella scelta
+            del prodotto più adatto.
+          </p> */}
         </div>
         <div className="p-top-right"></div>
       </div>
       <div className="p-details">
         <div className="p-details-left">
           <h1>Pronta consegna</h1>
-          <p>
+          {/* <p>
             Alcuni dei nostri prodotti sono generalmente disponibili per la
             consegna rapida, entro 24-48 ore. Non imponiamo alcun requisito di
             ordine minimo o di importo minimo per la fatturazione. La confezione
             minima è di 1 kg, confezionata in sacchetti di alluminio politenato
             termosaldati. Per ulteriori dettagli o domande, non esitate a
             contattarci tramite email o telefono.
+          </p> */}
+          <p>
+            Grazie alla nostra efficiente gestione delle scorte e alle
+            consolidate relazioni con i fornitori, siamo in grado di offrire una
+            selezione dei nostri prodotti per consegne rapide, garantendo
+            spedizioni entro 24-48 ore dalla conferma dell'ordine. Comprendiamo
+            l'importanza della flessibilità per i nostri clienti, per cui non
+            applichiamo limiti minimi di ordine né richiediamo un importo minimo
+            per la fatturazione, consentendo così ordini su misura in base alle
+            vostre specifiche esigenze. Per qualsiasi informazione aggiuntiva o
+            per discutere specifiche necessità di fornitura, il nostro team è
+            sempre disponibile. Vi invitiamo a contattarci direttamente via
+            email o telefono, dove un esperto sarà pronto ad assistervi per
+            garantire la migliore esperienza possibile e rispondere con
+            soluzioni personalizzate.
           </p>
           <div className="p-details-button">
-            <Link to="/products">Scarica lista</Link>
+            <a href="/pronta-consegna2024.pdf" download>
+              Scarica lista
+            </a>
           </div>
         </div>
         <div className="p-details-right">
@@ -48,7 +78,7 @@ const Products = () => {
       <div className="p-details">
         <div className="p-details-left">
           <h1>Prodotti disponibili su ordinazione</h1>
-          <p>
+          {/* <p>
             La maggior parte dei nostri prodotti può essere importata su
             richiesta del cliente. Tuttavia, a causa dei costi fissi associati
             all'esportazione/importazione, richiediamo un ordine minimo di 5 kg
@@ -58,6 +88,22 @@ const Products = () => {
             per l'ordine, comprendendo centinaia di opzioni. Attendiamo con
             interesse le vostre richieste e siamo a vostra disposizione per
             ulteriori informazioni.
+          </p> */}
+          <p>
+            La nostra capacità di soddisfare le richieste su misura si estende
+            all'importazione di prodotti specifici per incontrare le esigenze
+            particolari dei nostri clienti. Tuttavia, è importante notare che,
+            data la complessità e i costi fissi legati ai processi di
+            esportazione e importazione, stabiliamo un quantitativo minimo di 5
+            kg per ogni prodotto richiesto su ordinazione. I tempi di consegna
+            per tali ordini speciali possono variare, estendendosi generalmente
+            dai 30 ai 40 giorni dalla conferma dell'ordine, a causa dei dettagli
+            logistici e delle procedure doganali. Il nostro catalogo comprende
+            un'ampia varietà di prodotti, offrendo centinaia di alternative per
+            soddisfare le più diverse necessità. Il nostro team è pronto ad
+            assistervi con competenza e dedizione, garantendo un servizio
+            attento e personalizzato. Non esitate a contattarci per qualsiasi
+            domanda o per iniziare a pianificare il vostro prossimo ordine.
           </p>
           <div className="p-details-button">
             <Link to="/contact">Contattaci</Link>

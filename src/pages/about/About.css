@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 .a-bg {
-  background: url("../../assets/img-about/sfondo.png");
+  background: url("../../assets/img-about/sfondo.jpg");
   background-size: cover;
   height: 550px; /* Adjust height as needed */
   /* z-index: -1; */
@@ -36,7 +36,7 @@
   transition: background-color 0.3s, color 0.3s;
 }
 .a-button a:hover {
-  background-color: #4fde4f; /* Set the background color to light green on hover */
+  background-color: #56a635; /* Set the background color to light green on hover */
   color: black;
   border: 1px solid white;
 }

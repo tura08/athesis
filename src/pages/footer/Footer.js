@@ -40,21 +40,21 @@ const Footer = () => {
         </div>
         <div className="f-social">
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/athesisherbs/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={instagramIcon} alt="Instagram" />
           </a>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/maltodestrineAthesis"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={facebookIcon} alt="Facebook" />
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/athesisherbs/"
             target="_blank"
             rel="noopener noreferrer"
           >

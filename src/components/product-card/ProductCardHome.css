@@ -1,33 +1,45 @@
 .product-card {
-  background: #fff; /* Card background */
-  border: 1px solid #ddd; /* Card border */
-  border-radius: 5px; /* Card border radius */
-  text-decoration: none; /* Remove link styling */
-  color: inherit; /* Inherit text color */
-  overflow: hidden; /* Clip overflow */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Distribute space between content and image */
 }
 
 .product-image {
-  width: 90%; /* Full width */
-  max-height: 200px; /* Fixed height, adjust as needed */
-  object-fit: cover; /* Cover the container */
+  height: 250px; /* Fixed height for consistency */
+  object-fit: cover;
+  padding: 10px 20px; /* Space above the image */
+  margin-bottom: 10px; /* 10px gap from the bottom edge */
 }
+
 .product-info {
-  padding: 20px; /* Padding inside card */
+  padding: 30px;
 }
+
 .product-info h2 {
   text-align: left;
   color: var(--light-green);
 }
+
 .product-info p {
   margin: 0;
   text-align: left;
 }
-.product-price {
-  margin: 15px;
-  padding: 10px;
+.product-botanic-name {
+  padding: 20px;
+  margin: 30px;
+  font-size: 20px;
+  font-weight: bold;
   background-color: var(--light-green);
   color: white;
 }
-
-/* Add more styling as needed */
+@media (max-width: 768px) {
+  .product-image {
+    height: 150px;
+  }
+}

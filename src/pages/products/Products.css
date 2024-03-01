@@ -3,7 +3,7 @@
 .p-bg {
   display: flex;
   justify-content: center;
-  background: url("../../assets/img-products/sfondo.png");
+  background: url("../../assets/img-products/sfondo2.jpg");
   background-size: cover;
   height: 550px;
   padding: 10em;
@@ -22,6 +22,7 @@
 }
 .p-details {
   display: flex;
+  align-items: center;
   margin: 60px 0;
   padding: 30px 10em;
   gap: 100px;
@@ -53,7 +54,7 @@
   transition: background-color 0.3s, color 0.3s;
 }
 .p-details-button a:hover {
-  background-color: #4fde4f; /* Set the background color to light green on hover */
+  background-color: #56a635; /* Set the background color to light green on hover */
   color: black;
   border: 1px solid white;
 }

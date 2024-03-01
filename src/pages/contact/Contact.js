@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Contact.css";
 
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 import telIcon from "../../assets/img-contact/telefono.svg";
 import emailIcon from "../../assets/img-contact/mail.svg";
+import ContactFormResponse from "../../components/contact-form-response/ContactFormResponse";
 // const googleAPI = process.env.REACT_APP_GOOGLE_API;
 
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   function Submit(e) {
     e.preventDefault();
 
@@ -27,9 +29,11 @@ const Contact = () => {
     })
       .then((res) => {
         res.text();
-        window.alert("Thank you! Message sent.");
-        window.location.reload();
-      }) // Assuming the response is text
+        // Sostituire con componente
+        // window.alert("Thank you! Message sent.");
+        // window.location.reload();
+        setIsSubmitted(true);
+      })
       .then((data) => {
         console.log(data);
       })
@@ -38,26 +42,26 @@ const Contact = () => {
       });
 
     // Sending data to EmailJS
-    const form = e.target;
-    emailjs
-      .sendForm(
-        "service_1ooou8g",
-        "template_0ianvtg",
-        form,
-        "Rih8Wv0aVWJCpPMGO"
-      )
-      .then(
-        (result) => {
-          console.log("EmailJS Success:", result.text);
-          window.alert("Thank you! Message sent.");
-          window.location.reload();
-        },
-        (error) => {
-          console.error("EmailJS Error:", error.text);
-        }
-      );
+    // const form = e.target;
+    // emailjs
+    //   .sendForm(
+    //     "service_1ooou8g",
+    //     "template_0ianvtg",
+    //     form,
+    //     "Rih8Wv0aVWJCpPMGO"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log("EmailJS Success:", result.text);
+    //     },
+    //     (error) => {
+    //       console.error("EmailJS Error:", error.text);
+    //     }
+    //   );
   }
-
+  if (isSubmitted) {
+    return <ContactFormResponse />;
+  }
   return (
     <div className="c">
       <div className="c-bg">
