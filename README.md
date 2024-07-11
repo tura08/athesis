@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Visit our published website at:
+https://www.athesis-herbs.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
